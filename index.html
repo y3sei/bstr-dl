@@ -1,8 +1,30 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+	<meta charset="UTF-8">
 </head>
 <body>
-  <h1>bstr-dl</h1>
+
+<div id="form">
+	<input type="text" id="code">
+	<button id="form_submit">確認</button>
+</div>
+
+<div id="download">
+	<p></p>
+	<p id="download_link"></p>
+</div>
+
+
+<script>
+var baseurl = 'https://y3sei.github.io/bstr-dl/files/';
+document.getElementById('form_submit').addEventListener('click', function(){
+	var code = document.getElementById('code').value;
+
+	var link = baseurl + code + '.sb3';
+
+	document.getElementById('download_link').innerHTML = '<a href="' + link + '">ダウンロード</a>';
+});
+</script>
 </body>
 </html>
