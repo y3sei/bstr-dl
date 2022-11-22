@@ -16,8 +16,6 @@ document.getElementById('form_submit').addEventListener('click', function(){
 	// code check
 	var check = checkcode(code);
 	if( check !== 0 ) {
-		console.log('入力されたコードに誤りがあります。コードを確認してください。')
-
 		var elm_err = document.getElementById('error');
 		elm_err.innerHTML = '入力されたコードに誤りがあります。コードを確認してください。';
 		elm_err.classList.add('visible');
