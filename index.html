@@ -2,29 +2,41 @@
 <html lang="ja">
 <head>
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
+<main role="main">
+  <article>
 
-<div id="form">
-	<input type="text" id="code">
-	<button id="form_submit">確認</button>
-</div>
+  	<div class="main-title">
+		<h1>ビストロプログラミング @DojoCon Japan 2022</h1>
+		<p>DojoCon Japan 2022のワークショップ「ビストロプログラミング」へご参加いただきありがとうございました。</p>
+		<p>ご参加いただいた方のデータをダウンロードできるように準備いたしましたので、お手持ちのカードにあるコードを入力しダウンロードしてください。</p>
+	</div>
 
-<div id="download">
-	<p></p>
-	<p id="download_link"></p>
-</div>
+	<div id="form" class="visible">
+		<h2><span>ダウンロード用</span><span>キーワード</span></h2>
+		<p>
+			参加時に配布された「データダウンロードについて」のカードにあるキーワードを以下の枠内に入力し、「確認」を押してください。<br>
+			<img src="card.png" alt="画像：参加時に配布したデータダウンロードについて">
+		</p>
+		<p>
+			<input type="text" id="code" value="12641567">
+			<button id="form_submit">確認</button>
+		</p>
 
+		<p id="error"></p>
+	</div>
 
-<script>
-var baseurl = 'https://y3sei.github.io/bstr-dl/files/';
-document.getElementById('form_submit').addEventListener('click', function(){
-	var code = document.getElementById('code').value;
-
-	var link = baseurl + code + '.sb3';
-
-	document.getElementById('download_link').innerHTML = '<a href="' + link + '">ダウンロード</a>';
-});
-</script>
+	<div id="download">
+		<h2><span>ダウンロード</span></h2>
+		<p>以下のリンクからファイルをダウンロードしてください。</p>
+		<p id="download_link"></p>
+	</div>
+  </article>
+</main>
+<script src="download.js"></script>
 </body>
 </html>
