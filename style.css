@@ -1,0 +1,237 @@
+@charset "utf-8";
+
+/*** common ***/
+html,body,main,aside,article,section,nav,header,footer,div,p,dl,dt,dd {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, "繝偵Λ繧ｮ繝手ｧ偵ざ Pro W3", "Hiragino Kaku Gothic Pro", "繝｡繧､繝ｪ繧ｪ", sans-serif;
+  font-size: 62.5%;
+}
+body {
+  width: 100%;
+  font-size: 100%;
+  background-color: #35435e;
+  line-height: 1.6;
+}
+header,main,footer {
+  display: block;
+}
+main { display:block; overflow: hidden; }
+h1,h2,h3,h4,h5,h6 {
+  font-size: 2.4rem;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+div, p, a, span, dd, dt, li, address {
+  font-size: 1.6rem;
+}
+h1 img,h2 img,h3 img,h4 img,h5 img,h6 img {
+  max-width: 100%;
+}
+ul,ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+li {
+  list-style: none;
+}
+a {
+    color: #000;
+  text-decoration: none;
+}
+time {
+  display: inline-block;
+}
+address {
+  font-style: normal;
+}
+button,html [type="button"],[type="reset"],[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+  border-style: none;
+  margin: 0 auto;
+}
+textarea {
+  resize: vertical;
+}
+img {
+    max-width: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+main {
+  background-color: #fff;
+  padding-top: 80px;
+}
+body.home main {
+  padding-top: 0;
+}
+
+
+/*** BSTR ***/
+body {
+	padding: 1rem;
+	padding: min(3rem, 20px);
+}
+main {
+	margin: auto;
+	padding: 2rem;
+	max-width: 1200px;
+}
+
+h2 {
+	font-size: 1.8rem;
+	text-align: center;
+}
+
+
+div.main-title {
+	margin-bottom: 2rem;
+}
+
+div.main-title h1{
+    margin:2em 0;
+    position: relative;
+    padding: 0.25em 1em;
+    border: solid 2px #ffcb8a;
+    border-radius: 3px 0 3px 0;
+}
+div.main-title h1:before,div.main-title h1:after
+{
+    content: '';
+    position: absolute;
+    width:10px;
+    height: 10px;
+    border: solid 2px #ffcb8a;
+    border-radius: 50%;
+}
+div.main-title h1:after {
+    top:-12px;
+    left:-12px;
+}
+div.main-title h1:before {
+    bottom:-12px;
+    right:-12px;
+}
+div.main-title h1 {
+	margin-bottom: 2rem;
+	padding: 2rem;
+	border-radius: 2rem;
+	font-size: 2.0rem;
+	text-align: center;
+}
+div.main-title p {
+	padding-left: 1rem;
+	padding-right: 1rem;
+	font-size: 1.6rem;
+}
+div.main-title p + p {
+	padding-top: .75rem;
+}
+
+
+div#form {
+	display: none;
+    margin: 2em 0;
+	padding: 2rem;
+    background: #dcefff;
+}
+div#form.visible {
+	display: block;
+}
+div#form > * {
+    padding: 15px 0;
+    margin: 0;
+    text-align: center;
+}
+div#form h2 {
+	font-weight: bold;
+	color: #000;
+	background-color: #fff;
+}
+
+div#form input {
+	width: 80%;
+	max-width: 250px;
+	margin-bottom: .5em;
+	line-height: 2;
+	font-size: 2rem;
+	text-align: center;
+	border-width: 2px
+}
+div#form button {
+	width: 15%;
+	min-width: 3em;
+	margin-bottom: .5em;
+	line-height: 2;
+	font-size: 2rem;
+	text-align: center;
+	word-break: keep-all;
+	color: #fff;
+	background-color: #35435e;
+	border-radius: 1rem;
+}
+
+
+div#download {
+	display: none;
+    margin: 2em 0;
+	padding: 2rem;
+    background: #ffeaea;
+}
+div#download.visible {
+	display: block;
+}
+div#download > * {
+    padding: 15px 0;
+    margin: 0;
+    text-align: center;
+}
+div#download h2 {
+	font-weight: bold;
+	color: #000;
+	background-color: #fff;
+}
+
+div#download #download_link,
+div#download #download_link a {
+	font-size: 2rem;
+}
+div#download #download_link a {
+	display: block;
+	color: #fff;
+	background-color: #35435e;
+	border-radius: 1rem;
+	line-height: 3;
+}
+div#download #download_link a:hover {
+	color: #330000;
+	background-color: #ffa4a4;
+}
+
+
+
+p#error {
+	display: none;
+	padding: .5em .8em;
+	color: #ee0000;
+    background: #ffeaea;
+}
+p#error.visible {
+	display: block;
+}
+p#error > * {
+    padding: 15px 0;
+    margin: 0;
+    text-align: center;
+}
+p#error h2 {
+	font-weight: bold;
+	color: #000;
+	background-color: #fff;
+}
